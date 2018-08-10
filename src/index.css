@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid rgb(5, 5, 5);
+  width: 453px;
+  display: flex;
+}
+
+.titles{
+  position: static;
+  border: 3px solid #73AD21;
+}
