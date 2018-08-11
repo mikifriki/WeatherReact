@@ -7,8 +7,8 @@ class Titles extends React.Component{
         return(
 
          <div>
-            <h1>Ilma leida</h1>
-            <p>Leia temeratuur ja muu...</p>
+            <h2>Weather</h2>
+            <p>Input your location to see the weather!</p>
          </div>   
 
         );

@@ -47,7 +47,7 @@ class App extends React.Component{  //see initializib(alustab) componendi mida v
                 Riik: undefined,
                 Niiskus: undefined,
                 Selgitus: undefined,
-                Error: "Palun sisestage Asukoht"
+                Error: "Please enter a location"
             });
            
           } 

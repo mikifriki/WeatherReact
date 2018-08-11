@@ -6,11 +6,12 @@ class Form extends React.Component {
     render(){
         return(
           <form onSubmit={this.props.getIlm }>
-            <input type='tekst' name='Linn' placeholder='Linn...'/>
+            <input type='tekst' name='Linn' placeholder='City...'/>
+            
 
-            <input type='tekst' name='Riik' placeholder='Riik...'/>
+            <input type='tekst' name='Riik' placeholder='Country...'/>
 
-            <button>Näita Ilma</button>
+            <button>Show!</button>
 
           </form> 
             
@@ -18,5 +19,6 @@ class Form extends React.Component {
     }
 
 }
+
 
 export default Form;
