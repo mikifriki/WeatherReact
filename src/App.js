@@ -9,6 +9,8 @@ import Ilm from "./Components/Ilm";
 const API_KEY = "7ff9aafa73fb706223dd209f53908496";
 
 class App extends React.Component{  //see initializib(alustab) componendi mida vaja '
+
+
     state = { // see on object
         Temperatuur:undefined,
         Linn: undefined,
@@ -29,7 +31,7 @@ class App extends React.Component{  //see initializib(alustab) componendi mida v
           const data = await api_call.json(); 
           console.log(data);     
            
-          if (Linn && Riik){
+         if (Linn && Riik){
             this.setState({
                 Temperatuur: data.main.temp,
                 Linn: data.name,
@@ -37,22 +39,20 @@ class App extends React.Component{  //see initializib(alustab) componendi mida v
                 Niiskus: data.main.humidity,
                 Selgitus: data.weather[0].description,
                 Error: ""
-            })
-            
-                
-            } else { // asukoht on väga tähtis muidu tuleb error!!!!.
-                this.setState({
+                })
+           }
+ 
+         else { // asukoht on väga tähtis muidu tuleb error!!!!.
+                this.setState ({
                 Temperatuur: undefined,
                 Linn: undefined,
                 Riik: undefined,
                 Niiskus: undefined,
                 Selgitus: undefined,
-                Error: "Please enter a location"
-            });
-           
-          } 
-
+                Error: "Please enter a location"});     
+              } 
         }
+        
     render(){
         return(
             //saab ainult ühe parent elemendi returnida, sees võib olla ükskõik nt: <div><p>hey</p>midagi</div>
@@ -70,6 +70,7 @@ class App extends React.Component{  //see initializib(alustab) componendi mida v
           </div>  
         );
     }
+    
 
 }
 

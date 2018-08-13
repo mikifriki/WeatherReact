@@ -1,30 +1,35 @@
 body {
-    border: 1px solid #ccc;
-    width: 310px;
-    min-height: 68px;
-    padding: 10px;
-    display: flex;
-    font-family: "Helvetica", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
+  position: relative;
+  text-align: center;
+  margin:0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 16px;
 }
 
-form{
-   width: 100%;
+body-wrapper:before{
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 0; height: 100%;
+  vertical-align: middle;
 }
 
 input {
   width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
 button{
@@ -32,11 +37,49 @@ button{
   border-radius: 8px;
   background-color: white;
   color: black;
-
 }
 
 .titles{
   position: static;
   border: 3px solid #73AD21;
 }
+
+br{
+  line-height:22px;
+}
+
+/* this is spacing between the location, temp and so on. and the input field */
+br1{
+  display: block;
+  margin: 10px 0;
+}
+
+ p1, p2, p3, p4{/* this styles the city, temperature and other pargagraphs that you get when showing stuff */
+
+  text-align: left;
+  float: center;
+  letter-spacing: 0.5px;
+  position: relative;
+
+  -webkit-animation-name: Mtext; /* Safari */
+  -webkit-animation-duration: 4s; /* Safari*/
+  -webkit-animation-fill-mode: forwards;
+  animation-name: Mtext;
+  animation-duration: 3s;    
+  animation-fill-mode: reverse;
+  
+}
+
+
+@-webkit-keyframes Mtext{
+  0%   {left:200px; top:0px;}
+  25%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes Mtext{
+  0%   {left:200px; top:0px;}
+  25%  {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+}
+
 

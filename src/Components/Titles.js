@@ -5,9 +5,10 @@ class Titles extends React.Component{
 
     render(){
         return(
-
+            
          <div>
-            <h2>Weather</h2>
+            
+            <h2> <i class="fa fa-bolt"></i>Weather</h2>
             <p>Input your location to see the weather!</p>
          </div>   
 
