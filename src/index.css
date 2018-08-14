@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 body {
   position: relative;
   text-align: center;
@@ -9,6 +10,7 @@ body {
   border: 1px solid #ccc;
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 16px;
+  
 }
 
 body-wrapper:before{
@@ -37,6 +39,7 @@ button{
   border-radius: 8px;
   background-color: white;
   color: black;
+  
 }
 
 .titles{
@@ -44,22 +47,16 @@ button{
   border: 3px solid #73AD21;
 }
 
-br{
-  line-height:22px;
-}
+
 
 /* this is spacing between the location, temp and so on. and the input field */
-br1{
-  display: block;
-  margin: 10px 0;
-}
-
- p1, p2, p3, p4{/* this styles the city, temperature and other pargagraphs that you get when showing stuff */
-
-  text-align: left;
+/* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
+.City, .Temp, .Humidity, .Cloud{
+  text-align: center;
   float: center;
   letter-spacing: 0.5px;
   position: relative;
+  line-height: 1px;
 
   -webkit-animation-name: Mtext; /* Safari */
   -webkit-animation-duration: 4s; /* Safari*/
@@ -69,7 +66,6 @@ br1{
   animation-fill-mode: reverse;
   
 }
-
 
 @-webkit-keyframes Mtext{
   0%   {left:200px; top:0px;}
@@ -83,3 +79,12 @@ br1{
 }
 
 
+
+h2{
+  font-size: 300%;
+  margin: 0px 0px 0px 0px;
+  background-color: #007e00;
+	height: 50px;
+	padding: 20px;
+color: white;
+}

@@ -8,7 +8,8 @@ class Titles extends React.Component{
             
          <div>
             
-            <h2> <i class="fa fa-bolt"></i>Weather</h2>
+            <h2><i class="fa fa-bolt"></i> The Weather</h2>
+            
             <p>Input your location to see the weather!</p>
          </div>   
 

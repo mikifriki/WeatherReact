@@ -8,41 +8,35 @@ render(){
             <br1/>
 
             {this.props.Linn && this.props.Riik && 
-                <p1>
+                <p class="City">
                     <i class="fa fa-compass"></i>
                     Location: { this.props.Linn} { this.props.Riik } 
-                </p1>
+                </p>
             }
 
-            <br/>
+            
 
             {this.props.Temperatuur && 
-                 <p2>
+                 <p class="Temp">
                     <i class="fa fa-thermometer"></i> 
                     Temperature: { this.props.Temperatuur }°C
-                 </p2>
+                 </p>
             }
-
-            <br/>
 
             {this.props.Niiskus && 
-                <p3>
+                <p class="Humidity">
                     <i class="fa fa-tint"> </i>
                     Humidity: { this.props.Niiskus }%
-                </p3>
+                </p>
             }
-
-            <br/>
 
             { this.props.Selgitus && 
-                <p4>
+                <p class="Cloud">
                     <i class="fa fa-cloud"></i>
                     Cloudiness: { this.props.Selgitus}
-                </p4>
+                </p>
             }
-
-            <br/>
-
+            
             { this.props.Error && <p5>{ this.props.Error }</p5>}
             
             
