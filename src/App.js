@@ -25,7 +25,7 @@ class App extends React.Component{  //see initializib(alustab) componendi mida v
           e.preventDefault();
           const Linn = e.target.elements.Linn.value;   
           const Riik = e.target.elements.Riik.value;   
-          const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${Linn},${Riik}&appid=${API_KEY}&units=metric`);  
+          const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${Linn},${Riik}&appid=${API_KEY}&units=metric`);  
           const data = await api_call.json(); 
           console.log(data);     
            
