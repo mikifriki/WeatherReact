@@ -5,9 +5,7 @@ class Ilm extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<br1 />
-
+			<div>		
 				{
 					this.props.Linn && this.props.Riik &&
 					<p className="City">
