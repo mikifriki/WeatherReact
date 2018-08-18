@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
   position: relative;
   text-align: center;
   margin:0 auto;
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
   border: 1px solid #ccc;
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 16px; 
+
+  -webkit-animation-name: fadein; /* Safari */
+  -webkit-animation-duration: 1s; /* Safari*/
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
+  animation-name: fadein;
+  animation-duration: 1s;   
 }
 
 input {
@@ -21,7 +26,6 @@ input {
   background-color: white;
   background-position: 10px 10px; 
   background-repeat: no-repeat;
-  -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
@@ -33,13 +37,6 @@ button{
   
 }
 
-.titles{
-  position: static;
-  border: 3px solid #73AD21;
-}
-
-
-
 /* this is spacing between the location, temp and so on. and the input field */
 /* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
 .City, .Temp, .Humidity, .Cloud{
@@ -49,25 +46,25 @@ button{
   line-height: 1px;
 
   -webkit-animation-name: Mtext; /* Safari */
-  -webkit-animation-duration: 4s; /* Safari*/
+  -webkit-animation-duration: 1s; /* Safari*/
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: backwards;
+
   animation-name: Mtext;
-  animation-duration: 3s;     
+  animation-duration: 1s;     
 }
 
-/* This adds */
+/* This adds result text movement*/
 @-webkit-keyframes Mtext{
-  0%   {left:200px; top:0px;}
-  25%  {left:0px; top:0px;}
-  0%  {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(360deg);} 
+  from {left: 300px;}
+  to   {left: 0px;}
 }
 
 @keyframes Mtext{
-  0%   {left:200px; top:0px;}
-  25%  {left:0px; top:0px;}
+  from  {left: 300px;}
+  to   {left: 0px;}
 }
+
 
 h2{
   font-size: 300%;
@@ -78,4 +75,33 @@ h2{
   color: white;
 }
 
+/* This adds the fade in effect to the whole page, this makes the animations work on browsers that require the -webkit. Usually older browsers like safari 4.x or firefox and even firefox */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    /* This adds 3d transfrom fadein onto the sites body. the translate3d cordinates are xyz. Got it working using help from https://www.w3schools.com/css/css3_3dtransforms.asp */
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
 
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    /* This is the same 3d transfrom fadein for most browsers that dont need the -webkit prefix*/
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
