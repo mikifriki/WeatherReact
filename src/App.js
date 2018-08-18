@@ -1,10 +1,10 @@
 //importib Reacti jm tähtsa
-import React from "react";
+import React from 'react';
 
 //importib failid siit
-import Titles from "./Components/Titles.js";
-import Form from "./Components/Form";
-import Ilm from "./Components/Ilm";
+import Titles from './Components/Titles.js';
+import Form from './Components/Form';
+import Ilm from './Components/Ilm';
 
 class App extends React.Component {  //see initializib(alustab) componendi mida vaja '
 
@@ -24,7 +24,7 @@ class App extends React.Component {  //see initializib(alustab) componendi mida 
 			Riik: data.sys.country,
 			Niiskus: data.main.humidity,
 			Selgitus: data.weather[0].description,
-			Error: ""
+			Error: ''
 		});
 	}
 
@@ -36,7 +36,7 @@ class App extends React.Component {  //see initializib(alustab) componendi mida 
 			Niiskus: undefined,
 			Selgitus: undefined,
 			Error: msg
-		})
+		});
 	}
 
 	render() {
@@ -56,6 +56,6 @@ class App extends React.Component {  //see initializib(alustab) componendi mida 
 			</div>
 		);
 	}
-}
 
+}
 export default App; //laseb muudel failidel sellele ligi pääseda
