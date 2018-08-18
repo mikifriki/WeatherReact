@@ -16,8 +16,6 @@ class Ilm extends React.Component {
 					</p>
 				}
 
-
-
 				{
 					this.props.Temperatuur &&
 					<p className="Temp">
