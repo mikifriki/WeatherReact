@@ -1,5 +1,5 @@
 
-body {
+body{
   position: relative;
   text-align: center;
   margin:0 auto;
@@ -17,7 +17,7 @@ body {
   animation-duration: 1s;   
 }
 
-input {
+input{
   width: 130px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -76,7 +76,7 @@ h2{
 }
 
 /* This adds the fade in effect to the whole page, this makes the animations work on browsers that require the -webkit. Usually older browsers like safari 4.x or firefox and even firefox */
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadein{
   from {
     opacity: 0;
     /* This adds 3d transfrom fadein onto the sites body. the translate3d cordinates are xyz. Got it working using help from https://www.w3schools.com/css/css3_3dtransforms.asp */
@@ -91,7 +91,7 @@ h2{
   }
 }
 
-@keyframes fadein {
+@keyframes fadein{
   from {
     opacity: 0;
     /* This is the same 3d transfrom fadein for most browsers that dont need the -webkit prefix*/
