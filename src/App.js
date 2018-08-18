@@ -5,7 +5,6 @@ import React from "react";
 import Titles from "./Components/Titles.js";
 import Form from "./Components/Form";
 import Ilm from "./Components/Ilm";
-import Icon from "./Components/Icon";
 
 class App extends React.Component {  //see initializib(alustab) componendi mida vaja '
 
