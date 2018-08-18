@@ -7,7 +7,7 @@ body {
   height: 100%;
   border: 1px solid #ccc;
   font-family: "Helvetica", Arial, sans-serif;
-  font-size: 16px; 
+  font-size: 1em; 
 
   -webkit-animation-name: fadein; /* Safari */
   -webkit-animation-duration: 1s; /* Safari*/
@@ -22,7 +22,7 @@ input {
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1em;
   background-color: white;
   background-position: 10px 10px; 
   background-repeat: no-repeat;
