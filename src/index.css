@@ -44,7 +44,6 @@ button{
 /* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
 .City, .Temp, .Humidity, .Cloud{
   text-align: center;
-  float: center;
   letter-spacing: 0.5px;
   position: relative;
   line-height: 1px;
@@ -52,10 +51,9 @@ button{
   -webkit-animation-name: Mtext; /* Safari */
   -webkit-animation-duration: 4s; /* Safari*/
   -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-name: Mtext;
-  animation-duration: 3s;    
-  animation-fill-mode: reverse;
-  
+  animation-duration: 3s;     
 }
 
 /* This adds */
