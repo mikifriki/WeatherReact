@@ -16,6 +16,15 @@ body {
 	width:100%;
 }
 
+h2 {
+	font-size: 300%;
+	margin: 0px 0px 0px 0px;
+	background-color: #007e00;
+	height: 50px;
+	padding: 20px;
+	color: white;
+}
+
 input {
 	background-color:#FFF;
 	background-position:10px 10px;
@@ -59,16 +68,6 @@ button {
 @keyframes Mtext {
 	from  {left: 300px;}
 	to   {left: 0px;}
-}
-
-
-h2 {
-	font-size: 300%;
-	margin: 0px 0px 0px 0px;
-	background-color: #007e00;
-	height: 50px;
-	padding: 20px;
-	color: white;
 }
 
 /* This adds the fade in effect to the whole page, this makes the animations work on browsers that require the -webkit. Usually older browsers like safari 4.x or firefox and even firefox */
