@@ -8,7 +8,7 @@ import Ilm from './Components/Ilm';
 
 class App extends React.Component {  //see initializib(alustab) componendi mida vaja '
 
-	state = { // see on object
+	state = { 
 		Temperatuur: undefined,
 		Linn: undefined,
 		Riik: undefined,
