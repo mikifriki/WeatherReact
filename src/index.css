@@ -1,101 +1,103 @@
 
-  body {
-    -webkit-animation-duration:1s;
-    -webkit-animation-fill-mode:forwards;
-    -webkit-animation-name:fadein;
-    animation-duration:1s;
-    animation-fill-mode:backwards;
-    animation-name:fadein;
-    border:1px solid #ccc;
-    font-family:Helvetica, Arial, sans-serif;
-    font-size:1em;
-    height:100%;
-    margin:0 auto;
-    position:relative;
-    text-align:center;
-    width:100%;
-    }
+	body {
+		-webkit-animation-duration:1s;
+		-webkit-animation-fill-mode:forwards;
+		-webkit-animation-name:fadein;
+		animation-duration:1s;
+		animation-fill-mode:backwards;
+		animation-name:fadein;
+		border:1px solid #ccc;
+		font-family:Helvetica, Arial, sans-serif;
+		font-size:1em;
+		height:100%;
+		margin:0 auto;
+		position:relative;
+		text-align:center;
+		width:100%;
+		}
 
-  input {
-    background-color:#FFF;
-    background-position:10px 10px;
-    background-repeat:no-repeat;
-    border:2px solid #ccc;
-    border-radius:4px;
-    box-sizing:border-box;
-    font-size:1em;
-    transition:width .4s ease-in-out;
-    width:130px;
-    }
+	input {
+		background-color:#FFF;
+		background-position:10px 10px;
+		background-repeat:no-repeat;
+		border:2px solid #ccc;
+		border-radius:4px;
+		box-sizing:border-box;
+		font-size:1em;
+		transition:width .4s ease-in-out;
+		width:130px;
+		}
 
-  button {
-    background-color:#FFF;
-    border-radius:8px;
-    color:#000;
-    padding:2px;
-    }
-    
+	button {
+		background-color:#FFF;
+		border-radius:8px;
+		color:#000;
+		padding:2px;
+		}
+
     /* this is spacing between the location, temp and so on. and the input field */
     /* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
-  .City,.Temp,.Humidity,.Cloud {
-    -webkit-animation-duration:1s;
-    -webkit-animation-fill-mode:forwards;
-    -webkit-animation-name:Mtext;
-    animation-duration:1s;
-    animation-fill-mode:backwards;
-    animation-name:Mtext;
-    letter-spacing:.5px;
-    line-height:1px;
-    position:relative;
-    text-align:center;
-    }
+	.City,.Temp,.Humidity,.Cloud {
+		-webkit-animation-duration:1s;
+		-webkit-animation-fill-mode:forwards;
+		-webkit-animation-name:Mtext;
+		animation-duration:1s;
+		animation-fill-mode:backwards;
+		animation-name:Mtext;
+		letter-spacing:.5px;
+		line-height:1px;
+		position:relative;
+		text-align:center;
+		}
 
 /* This adds result text movement*/
-  @-webkit-keyframes Mtext {
-    from {left: 300px;}
-    to   {left: 0px;}
-    }
+	@-webkit-keyframes Mtext {
+		from {left: 300px;}
+		to   {left: 0px;}
+		}
 
-  @keyframes Mtext {
-    from  {left: 300px;}
-    to   {left: 0px;}
-    }
+	@keyframes Mtext {
+		from  {left: 300px;}
+		to   {left: 0px;}
+		}
 
 
-  h2 {
-    font-size: 300%;
-    margin: 0px 0px 0px 0px;
-    background-color: #007e00;
-    height: 50px;
-    padding: 20px;
-    color: white;
-    }
+	h2 {
+		font-size: 300%;
+		margin: 0px 0px 0px 0px;
+		background-color: #007e00;
+		height: 50px;
+		padding: 20px;
+		color: white;
+		}
 
 /* This adds the fade in effect to the whole page, this makes the animations work on browsers that require the -webkit. Usually older browsers like safari 4.x or firefox and even firefox */
-  @-webkit-keyframes fadein {
-    from {
-      opacity: 0;
-      /* This adds 3d transfrom fadein onto the sites body. the translate3d cordinates are xyz. Got it working using help from https://www.w3schools.com/css/css3_3dtransforms.asp */
-      -webkit-transform: translate3d(0, -100%, 0);
-      transform: translate3d(0, -100%, 0);
-    }
-    to {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+	@-webkit-keyframes fadein {
+		from {
+			opacity: 0;
+			/* This adds 3d transfrom fadein onto the sites body. the translate3d cordinates are xyz. Got it working using help from https://www.w3schools.com/css/css3_3dtransforms.asp */
+			-webkit-transform: translate3d(0, -100%, 0);
+			transform: translate3d(0, -100%, 0);
+			}
+
+		to {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+    		}
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-    /* This is the same 3d transfrom fadein for most browsers that dont need the -webkit prefix*/
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+	@keyframes fadein {
+		from {
+			opacity: 0;
+			/* This is the same 3d transfrom fadein for most browsers that dont need the -webkit prefix*/
+			-webkit-transform: translate3d(0, -100%, 0);
+			transform: translate3d(0, -100%, 0);
+			}
+
+		to {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			}
 }
