@@ -1,19 +1,19 @@
 
   body {
-	  position: relative;
-	  text-align: center;
-	  margin: 0 auto;
-	  width: 100%;
-	  height: 100%;
-  	border: 1px solid #ccc;
-	  font-family: "Helvetica", Arial, sans-serif;
-	  font-size: 1em;
-	  -webkit-animation-name: fadein; /* Safari */
-	  -webkit-animation-duration: 1s; /* Safari*/
-	  -webkit-animation-fill-mode: forwards;
-	  animation-fill-mode: backwards;
-	  animation-name: fadein;
-	  animation-duration: 1s;
+    -webkit-animation-duration:1s;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-name:fadein;
+    animation-duration:1s;
+    animation-fill-mode:backwards;
+    animation-name:fadein;
+    border:1px solid #ccc;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:1em;
+    height:100%;
+    margin:0 auto;
+    position:relative;
+    text-align:center;
+    width:100%;
     }
 
   input {
