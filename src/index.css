@@ -35,8 +35,8 @@ button {
 	padding:2px;
 }
 
-    /* this is spacing between the location, temp and so on. and the input field */
-    /* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
+/* this is spacing between the location, temp and so on. and the input field */
+/* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
 .City,.Temp,.Humidity,.Cloud {
 	-webkit-animation-duration:1s;
 	-webkit-animation-fill-mode:forwards;
