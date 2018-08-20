@@ -1,6 +1,8 @@
 import React from 'react';
 
 
+
+//this creates a constant named API_KEY which uses and imports the hidden API key
 const API_KEY = `${process.env.REACT_APP_API_KEY}`;
 
 class Form extends React.Component {

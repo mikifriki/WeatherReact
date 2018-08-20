@@ -1,12 +1,12 @@
-//importib Reacti jm tähtsa
+//This imports React
 import React from 'react';
 
-//importib failid siit
+//This imports the other .js files from the components folder
 import Titles from './Components/Titles.js';
 import Form from './Components/Form';
 import Ilm from './Components/Ilm';
 
-class App extends React.Component {  //see initializib(alustab) componendi mida vaja '
+class App extends React.Component {  //This initializes the required component
 
 	state = {
 		Temperature: undefined,
@@ -41,7 +41,7 @@ class App extends React.Component {  //see initializib(alustab) componendi mida 
 
 	render() {
 		return (
-			//saab ainult ühe parent elemendi returnida, sees võib olla ükskõik nt: <div><p>hey</p>midagi</div>
+			// The render can only return one parent element <div> in this case. Can not reutrn more than one if you try it will not work and cause an error!
 			<div>
 				<Titles />
 				<Form weatherLoaded={this.onWeatherLoaded} weatherError={this.onWeatherError} />
@@ -58,4 +58,4 @@ class App extends React.Component {  //see initializib(alustab) componendi mida 
 	}
 
 }
-export default App; //laseb muudel failidel sellele ligi pääseda
+export default App; //This exports the App.js to be used in other files. This gets imported into index.js in this case
