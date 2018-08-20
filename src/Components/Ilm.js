@@ -5,36 +5,36 @@ class Ilm extends React.Component {
 
 	render() {
 		return (
-			<div>		
+			<div>
 				{
-					this.props.Linn && this.props.Riik &&
+					this.props.City && this.props.Country &&
 					<p className="City">
 						<i className="fa fa-compass"></i>
-						Location: {this.props.Linn} {this.props.Riik}
+						Location: {this.props.City} {this.props.Country}
 					</p>
 				}
 
 				{
-					this.props.Temperatuur &&
+					this.props.Temperature &&
 					<p className="Temp">
 						<i className="fa fa-thermometer"></i>
-						Temperature: {this.props.Temperatuur}°C
+						Temperature: {this.props.Temperature}°C
 					</p>
 				}
 
 				{
-					this.props.Niiskus &&
+					this.props.Humidity &&
 					<p className="Humidity">
 						<i className="fa fa-tint"> </i>
-						Humidity: {this.props.Niiskus}%
+						Humidity: {this.props.Humidity}%
 					</p>
 				}
 
 				{
-					this.props.Selgitus &&
+					this.props.Forecast &&
 					<p className="Cloud">
 						<i className="fa fa-cloud"></i>
-						Cloudiness: {this.props.Selgitus}
+						Forecast: {this.props.Forecast}
 					</p>
 				}
 
