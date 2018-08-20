@@ -41,7 +41,7 @@ class App extends React.Component {  //This initializes the required component
 
 	render() {
 		return (
-			// The render can only return one parent element <div> in this case. Can not reutrn more than one if you try it will not work and cause an error!
+			// The render can only return one parent element <div> in this case. Can not return more than one element if you try it will not work and cause an error!
 			<div>
 				<Titles />
 				<Form weatherLoaded={this.onWeatherLoaded} weatherError={this.onWeatherError} />
