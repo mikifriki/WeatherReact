@@ -35,19 +35,19 @@
     padding:2px;
     }
     
-/* this is spacing between the location, temp and so on. and the input field */
-/* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
-  .City, .Temp, .Humidity, .Cloud {
-	  text-align: center;
-	  letter-spacing: 0.5px;
-	  position: relative;
-	  line-height: 1px;
-	  -webkit-animation-name: Mtext;
-	  -webkit-animation-duration: 1s; /* Safari */
-	  -webkit-animation-fill-mode: forwards; /* Safari*/
-	  animation-fill-mode: backwards;
-	  animation-name: Mtext;
-	  animation-duration: 1s;
+    /* this is spacing between the location, temp and so on. and the input field */
+    /* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
+  .City,.Temp,.Humidity,.Cloud {
+    -webkit-animation-duration:1s;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-name:Mtext;
+    animation-duration:1s;
+    animation-fill-mode:backwards;
+    animation-name:Mtext;
+    letter-spacing:.5px;
+    line-height:1px;
+    position:relative;
+    text-align:center;
     }
 
 /* This adds result text movement*/
