@@ -2,7 +2,6 @@ import React from 'react';
 
 class Ilm extends React.Component {
 
-
 	render() {
 		return (
 			<div>
@@ -38,7 +37,12 @@ class Ilm extends React.Component {
 					</p>
 				}
 
-				{this.props.Error && <p5>{this.props.Error}</p5>}
+				{
+					this.props.Error &&
+					<p>
+						{this.props.Error}
+					</p>
+				}
 			</div>
 		);
 	}
