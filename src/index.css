@@ -6,43 +6,88 @@ body {
 	animation-duration:1s;
 	animation-fill-mode:backwards;
 	animation-name:fadein;
-	border:1px solid #ccc;
-	font-family:Helvetica, Arial, sans-serif;
-	font-size:1em;
-	height:100%;
-	margin:0 auto;
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	font-size:large;
 	position:relative;
 	text-align:center;
 	width:100%;
+	background-size: initial;
+	height: 100%;
+    margin: 0;
+
+}
+
+.Container{
+	display: inline-block;
+	background-image: linear-gradient(rgb(255, 255, 255), rgb(243, 255, 68));
+	border-radius: 25px;
+    border: 2px solid rgb(0, 0, 0);
+	padding: 5px;
+	margin-top: 0px;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+
+}
+html {
+	height: 100%;
+}
+
+form {
+	padding-bottom: 5px;
+
 }
 
 h2 {
-	font-size: 300%;
-	margin: 0px 0px 0px 0px;
-	background-color: #007e00;
-	height: 50px;
-	padding: 20px;
+
+	background-image: radial-gradient(circle, rgb(29, 148, 252), #5EB4FF);
+	border-radius: 25px;
+	padding: 15px;
 	color: white;
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+	font-size: 42px;
+	letter-spacing: 0.15em;
+	line-height: 1.1em;
+	margin:0px;
+	text-align: center;
+	text-transform: uppercase;
+
 }
 
 input {
-	background-color:#FFF;
 	background-position:10px 10px;
 	background-repeat:no-repeat;
-	border:2px solid #ccc;
-	border-radius:4px;
+	border:2px solid rgb(119, 118, 118);
+	border-radius:10px;
 	box-sizing:border-box;
 	font-size:1em;
 	transition:width .4s ease-in-out;
 	width:130px;
+	flex: 3;
+	text-align: left;
+	margin: 0 0 0 3px;
 }
 
 button {
-	background-color:#FFF;
-	border-radius:8px;
-	color:#000;
-	padding:2px;
+	background-color: rgb(146, 146, 146);
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:25px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:4px 8px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	outline: none;
+    border: 0;
+    margin: 5px;
+    cursor: pointer;
 }
+
 
 /* this is spacing between the location, temp and so on. and the input field */
 /* this also styles the city, temperature and other pargagraphs that you get when showing stuff */
@@ -53,11 +98,15 @@ button {
 	animation-duration:1s;
 	animation-fill-mode:backwards;
 	animation-name:Mtext;
-	letter-spacing:.5px;
-	line-height:1px;
+	letter-spacing:0.1em;
+	line-height:15px;
 	position:relative;
 	text-align:center;
+	color: #2a2a2a;
+	font-variant: small-caps;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
 }
+
 
 /* This adds result text movement*/
 @-webkit-keyframes Mtext {
@@ -99,4 +148,12 @@ button {
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
+}
+
+button:hover {
+	background-color:grey;
+}
+button:active {
+	position:relative;
+	top:1px;
 }
